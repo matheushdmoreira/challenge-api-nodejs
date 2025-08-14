@@ -8,6 +8,10 @@ import {
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod'
 
+import { createCourseRoute } from './routes/create-course.ts'
+import { getCourseByIdRoute } from './routes/get-course-by-id.ts'
+import { getCoursesRoute } from './routes/get-courses.ts'
+
 const server = fastify({
   logger: {
     transport: {
@@ -38,6 +42,10 @@ if (process.env.NODE_ENV === 'development') {
 
 server.setSerializerCompiler(serializerCompiler)
 server.setValidatorCompiler(validatorCompiler)
+
+server.register(createCourseRoute)
+server.register(getCourseByIdRoute)
+server.register(getCoursesRoute)
 
 server.listen({ port: 3333 }).then(() => {
   console.log('HTTP server running!')
