@@ -27,7 +27,7 @@ docker compose up -d
 4. Crie um arquivo `.env` na raiz com:
 ```bash
 # URL do banco (Docker local padrão)
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/desafio
+DATABASE_URL=postgresql://docker:docker@localhost:5432/desafio
 
 # Ativa docs em /docs
 NODE_ENV=development
@@ -75,7 +75,7 @@ Base URL: `http://localhost:3333`
 Há um arquivo `requisicoes.http` com exemplos prontos (compatível com extensões de REST Client).
 
 ## Modelos (schema)
-Tabelas principais definidas em `src/database/schema.ts`:
+Tabelas principais definidas em `src/db/schema.ts`:
 - `courses`
   - `id` (uuid, pk, default random)
   - `title` (text, único, obrigatório)
