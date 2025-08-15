@@ -15,6 +15,34 @@
       "when": 1755192572445,
       "tag": "0001_pale_inertia",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755265167688,
+      "tag": "0002_typical_peter_quill",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755265285329,
+      "tag": "0003_bitter_ronan",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755265324549,
+      "tag": "0004_steep_the_fallen",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1755265438157,
+      "tag": "0005_bent_sinister_six",
+      "breakpoints": true
     }
   ]
 }
